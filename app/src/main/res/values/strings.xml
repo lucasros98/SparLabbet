@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SparLabbet</string>
+    <string name="action_graph">Show graph</string>
+
+    <string name="startbelopp">Startbelopp:</string>
+
+    <string name="avkastning">Förväntad avkastning per år: (%)</string>
+
+    <string name="spartid">Spartid: (i år)</string>
+
+    <string name="manadsparande">Månadssparande:</string>
+
+    <string name="calculate">Beräkna</string>
+
+    <string name="belopp">Belopp:</string>
+</resources>

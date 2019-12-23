@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:icon="@drawable/money"
+    android:background="@drawable/picture"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="301dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/sparlabbet" />
+
+            <TextView
+                android:id="@+id/startbelopp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignStart="@+id/adView"
+                android:layout_alignLeft="@+id/adView"
+                android:layout_alignEnd="@+id/adView"
+                android:layout_alignRight="@+id/adView"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="7dp"
+                android:text="Önskad kapitalmängd:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/etkapital"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_below="@+id/startbelopp"
+                android:layout_alignStart="@+id/startbelopp"
+                android:layout_alignLeft="@+id/startbelopp"
+                android:layout_alignEnd="@+id/startbelopp"
+                android:layout_alignRight="@+id/startbelopp"
+                android:ems="10"
+                android:inputType="number"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="7dp"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/holo_blue_bright" />
+
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:text="Dagens kapitalmängd:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/ettoday"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/utveckling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etspartid"
+                android:layout_alignStart="@+id/etspartid"
+                android:layout_alignLeft="@+id/etspartid"
+                android:layout_alignEnd="@+id/etspartid"
+                android:layout_alignRight="@+id/etspartid"
+                android:paddingLeft="7dp"
+                android:text="@string/avkastning"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/etutveckling"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_alignStart="@+id/utveckling"
+                android:layout_alignLeft="@+id/utveckling"
+                android:layout_alignEnd="@+id/utveckling"
+                android:layout_alignRight="@+id/utveckling"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:paddingLeft="7dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/spartid"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etkapital"
+                android:layout_alignStart="@+id/etkapital"
+                android:layout_alignLeft="@+id/etkapital"
+                android:layout_alignEnd="@+id/etkapital"
+                android:layout_alignRight="@+id/etkapital"
+                android:paddingLeft="7dp"
+                android:text="Antalet år till målet skall uppnås:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/etspartid"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/spartid"
+
+                android:layout_alignStart="@+id/etkapital"
+                android:layout_alignLeft="@+id/etkapital"
+                android:layout_alignEnd="@+id/spartid"
+                android:layout_alignRight="@+id/spartid"
+                android:ems="10"
+                android:inputType="number"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="7dp"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/holo_blue_bright" />
+
+            <!-- view for AdMob Banner Ad -->
+
+
+            <!-- view for AdMob Banner Ad -->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="7dp"
+                android:paddingTop="7dp" />
+
+            <Button
+                android:id="@+id/buttoncalc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etutveckling"
+                android:layout_alignStart="@+id/etutveckling"
+                android:layout_alignLeft="@+id/etutveckling"
+                android:layout_alignEnd="@+id/etutveckling"
+                android:layout_alignRight="@+id/etutveckling"
+                android:layout_marginTop="5dp"
+                android:background="#4c667f"
+                android:elevation="16dp"
+                android:text="@string/calculate"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="260dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
